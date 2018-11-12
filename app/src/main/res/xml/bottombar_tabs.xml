@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id = "+id/tab_direction"
+        icon="@mipmap/ic_directions_transit"
+        title="配送"/>
+    <tab
+        id="@+id/tab_self"
+        icon="@mipmap/ic_account_box"
+        title="我的" />
+</tabs>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity"
+    >
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+    </FrameLayout>
+
+    <View style="@style/HorizontalLineStyle" />
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <com.fecmobile.distribution.widget.CenterButton
+            android:id="@+id/rb_distribution"
+            style="@style/cart_HomeTabStyle"
+            android:drawableLeft="@mipmap/ic_directions_transit"
+            android:text="@string/tab_distribution"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:adjustViewBounds="true"
+            android:textColor="@color/cart_tab_color" />
+        <com.fecmobile.distribution.widget.CenterButton
+            android:id="@+id/rb_self"
+            style="@style/cart_HomeTabStyle"
+            android:drawableLeft="@mipmap/ic_account_box"
+            android:text="@string/tab_self"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:adjustViewBounds="true"
+            android:textColor="@color/cart_tab_color" />
+    </RadioGroup>
+
+</LinearLayout>
